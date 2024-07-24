@@ -6,7 +6,7 @@ if game.PlaceId == 18153052081 then
     
     --value
     _G.autoTap = true
-    _G.autoFight1 = true
+    _G.autoBoss1 = true
     _G.autoAttack = true
     _G.autoRebirth = true
 
@@ -24,15 +24,14 @@ if game.PlaceId == 18153052081 then
     end
     end
 
-    function autoFight1()
-        while _G.autoFight1 == true do
+    function autoBoss1()
+        while _G.autoBoss1 == true do
             local args = {
-                [1] = workspace.enemy.scene0.enemy1,
-                [2] = false
+                [1] = 2
             }
             
-            game:GetService("ReplicatedStorage").Events.Action.CombatStartEvent:FireServer(unpack(args))
-            wait(0.3)
+            game:GetService("ReplicatedStorage").Events.MapBoss.HurtEnemyEvent:FireServer(unpack(args))
+            wait(0.00000000000000000000000001)
     end 
     end
 
@@ -80,11 +79,11 @@ if game.PlaceId == 18153052081 then
     })
 
     Fighttab:AddToggle({
-        Name = "Auto Fight1",
+        Name = "White Bear Monster",
         Default = false,
         Callback = function(Value)
-            _G.autoFight1 = (Value)
-            autoFight1()
+            _G.autoBoss1 = (Value)
+            autoBoss1()
         end    
     })
     
