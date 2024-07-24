@@ -83,9 +83,13 @@ if game.PlaceId == 18153052081 then
             }
 
             game:GetService("ReplicatedStorage").Events.MapBoss.HurtEnemyEvent:FireServer(unpack(args))
-            game:GetService("ReplicatedStorage").Events.MapBoss.HurtEnemyEvent:FireServer(unpack(args))
             local args = {
                 [1] = 12
+            }
+
+            game:GetService("ReplicatedStorage").Events.MapBoss.HurtEnemyEvent:FireServer(unpack(args))
+            local args = {
+                [1] = 13
             }
 
             game:GetService("ReplicatedStorage").Events.MapBoss.HurtEnemyEvent:FireServer(unpack(args))
@@ -107,7 +111,7 @@ if game.PlaceId == 18153052081 then
     function autoRebirth()
         while _G.autoRebirth == true do
             game:GetService("ReplicatedStorage").Events.Rebirth.AutoRebirthEvent:FireServer()
-            wait(5)
+            wait(2)
     end
     end
 
