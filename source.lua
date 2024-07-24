@@ -107,7 +107,7 @@ if game.PlaceId == 18153052081 then
     function autoRebirth()
         while _G.autoRebirth == true do
             game:GetService("ReplicatedStorage").Events.Rebirth.AutoRebirthEvent:FireServer()
-            wait(1)
+            wait(5)
     end
     end
 
