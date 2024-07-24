@@ -42,7 +42,7 @@ if game.PlaceId == 18153052081 then
             }
             
             game:GetService("ReplicatedStorage").Events.Fight.RefreshEnemyHpEvent:FireServer(unpack(args))
-            wait(0.1)
+            wait(0.05)
     end
     end
 
