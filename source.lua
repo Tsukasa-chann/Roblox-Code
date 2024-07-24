@@ -148,7 +148,7 @@ if game.PlaceId == 18153052081 then
     })
 
     Fighttab:AddToggle({
-        Name = "White Bear Monster",
+        Name = "Attack All Boss",
         Default = false,
         Callback = function(Value)
             _G.autoBoss1 = (Value)
