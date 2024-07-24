@@ -83,6 +83,12 @@ if game.PlaceId == 18153052081 then
             }
 
             game:GetService("ReplicatedStorage").Events.MapBoss.HurtEnemyEvent:FireServer(unpack(args))
+            game:GetService("ReplicatedStorage").Events.MapBoss.HurtEnemyEvent:FireServer(unpack(args))
+            local args = {
+                [1] = 12
+            }
+
+            game:GetService("ReplicatedStorage").Events.MapBoss.HurtEnemyEvent:FireServer(unpack(args))
             wait(0.00000000000000000000000001)
     end 
     end
