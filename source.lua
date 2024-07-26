@@ -223,10 +223,5 @@ if game.PlaceId == 18153052081 then
             autoBWeapon()
         end    
     })
-
-elseif game.PlaceId ==  then
-    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-    local Window = OrionLib:MakeWindow({Name = "Rawr", HidePremium = false, SaveConfig = true, ConfigFolder = "rawrConfig"})
-
     end 
     OrionLib:Init()
