@@ -104,6 +104,31 @@ if game.PlaceId == 18153052081 then
             }
             
             game:GetService("ReplicatedStorage").Events.Fight.RefreshEnemyHpEvent:FireServer(unpack(args))
+            local args = {
+                [1] = 99999999999
+            }
+            
+            game:GetService("ReplicatedStorage").Events.Fight.RefreshEnemyHpEvent:FireServer(unpack(args))
+            local args = {
+                [1] = 999999999999
+            }
+            
+            game:GetService("ReplicatedStorage").Events.Fight.RefreshEnemyHpEvent:FireServer(unpack(args))
+            local args = {
+                [1] = 9999999999999
+            }
+            
+            game:GetService("ReplicatedStorage").Events.Fight.RefreshEnemyHpEvent:FireServer(unpack(args))
+            local args = {
+                [1] = 99999999999999
+            }
+            
+            game:GetService("ReplicatedStorage").Events.Fight.RefreshEnemyHpEvent:FireServer(unpack(args))
+            local args = {
+                [1] = 999999999999999
+            }
+            
+            game:GetService("ReplicatedStorage").Events.Fight.RefreshEnemyHpEvent:FireServer(unpack(args))
             wait(0.05)
     end
     end
@@ -199,7 +224,9 @@ if game.PlaceId == 18153052081 then
         end    
     })
 
-
+elseif game.PlaceId ==  then
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local Window = OrionLib:MakeWindow({Name = "Rawr", HidePremium = false, SaveConfig = true, ConfigFolder = "rawrConfig"})
 
     end 
     OrionLib:Init()
